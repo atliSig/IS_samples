@@ -20,4 +20,13 @@ def make_axy_urls(num_samples:int=150, out_path:str='./axy-urls.txt'):
             f.write(f'sample_{i}.wav?raw=true\n')
 
 
-make_axy_urls()
+def make_mushra_urls(num_samples:int=60, out_path:str='./mushra-urls.txt'):
+    """
+    Makes a file containing the urls of the MUSHRA scores for each experiment.
+    """
+    with open(out_path, 'w') as f:
+        for i in range(num_samples):
+            f.write(f'sample_{i}.wav?raw=true\n')
+
+
+make_mushra_urls()
